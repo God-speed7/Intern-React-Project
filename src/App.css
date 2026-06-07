@@ -21,7 +21,7 @@
   color: #ffffff;
   font-size: 22px;
   font-weight: 800;
-  letter-spacing: 0.01em;
+  letter-spacing: 0;
 }
 
 .nav-links {
@@ -65,7 +65,7 @@
   color: var(--text-primary);
   font-size: 40px;
   line-height: 1.1;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
 }
 
 .eyebrow {
@@ -73,18 +73,103 @@
   color: var(--accent);
   font-size: 13px;
   font-weight: 800;
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
-.tasks-grid {
-  width: min(100%, 1180px);
-  margin: 0 auto;
+.home-hero {
+  width: min(100%, 780px);
+  padding: 36px 0;
+}
+
+.home-hero h1 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 44px;
+  line-height: 1.1;
+}
+
+.home-hero p:last-child {
+  max-width: 680px;
+  margin: 18px 0 0;
+  color: var(--text-secondary);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.task-page {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
   justify-content: center;
-  gap: 24px;
+}
+
+.dashboard-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.dashboard-nav-card {
+  min-height: 220px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-primary);
+  background: var(--card);
+  box-shadow: var(--shadow-md);
+  text-decoration: none;
+}
+
+.dashboard-nav-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: 0 18px 34px rgba(15, 23, 42, 0.12);
+}
+
+.dashboard-nav-card h2 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.dashboard-nav-card p {
+  margin: 16px 0 24px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.dashboard-nav-card span {
+  width: fit-content;
+  min-height: 42px;
+  padding: 11px 16px;
+  border-radius: 8px;
+  color: #ffffff;
+  background: var(--accent);
+  font-weight: 800;
+}
+
+.placeholder-panel {
+  max-width: 760px;
+  padding: 30px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: var(--shadow-md);
+}
+
+.placeholder-panel h2 {
+  margin: 0 0 12px;
+  color: var(--text-primary);
+  font-size: 24px;
+}
+
+.placeholder-panel p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.7;
 }
 
 .toolbar {
@@ -250,7 +335,7 @@
   color: var(--text-primary);
   background: #f1f5f9;
   font-size: 13px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -339,6 +424,10 @@
     flex-direction: column;
   }
 
+  .dashboard-nav-grid {
+    grid-template-columns: 1fr;
+  }
+
   .nav-links a,
   .search-input,
   .count-pill {
@@ -352,6 +441,10 @@
 
   .page-heading h1 {
     font-size: 32px;
+  }
+
+  .home-hero h1 {
+    font-size: 34px;
   }
 
   .dashboard-stats {

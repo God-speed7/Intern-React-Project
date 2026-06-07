@@ -13,7 +13,7 @@
   color: var(--text-primary);
   font-size: 32px;
   line-height: 1.15;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
 }
 
 .count-display {

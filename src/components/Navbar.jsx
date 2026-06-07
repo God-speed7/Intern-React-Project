@@ -8,8 +8,9 @@ function Navbar() {
 
         <div className="nav-links">
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/products">Products</NavLink>
           <NavLink to="/dashboard">Dashboard</NavLink>
+          <NavLink to="/products">Products</NavLink>
+          <NavLink to="/user">User</NavLink>
         </div>
       </nav>
     </header>

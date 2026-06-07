@@ -1,20 +1,14 @@
-import CounterApp from '../CounterApp'
-import InputHandling from '../InputHandling'
-import TodoApp from '../TodoApp'
-
 function Home() {
   return (
-    <main className="page home-page">
-      <div className="page-heading">
+    <main className="page">
+      <section className="home-hero">
         <p className="eyebrow">Home</p>
         <h1>React Practice Tasks</h1>
-      </div>
-
-      <div className="tasks-grid">
-        <CounterApp />
-        <InputHandling />
-        <TodoApp />
-      </div>
+        <p>
+          A clean Vite and React workspace for practicing components, state,
+          forms, lists, and route-based page navigation.
+        </p>
+      </section>
     </main>
   )
 }
