@@ -1,0 +1,86 @@
+.counter-card {
+  width: min(100%, 380px);
+  padding: 32px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+
+.counter-card h1 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 32px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.count-display {
+  margin: 28px auto;
+  width: 148px;
+  height: 148px;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--border);
+  border-radius: 50%;
+  color: var(--primary);
+  background: #f8fafc;
+  font-size: 62px;
+  font-weight: 800;
+}
+
+.button-row {
+  min-height: 52px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.counter-button {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1;
+  box-shadow: var(--shadow-sm);
+}
+
+.counter-button:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.increase {
+  background: var(--accent);
+}
+
+.increase:hover {
+  background: #115e59;
+}
+
+.decrease {
+  background: var(--danger);
+}
+
+.decrease:hover {
+  background: #b91c1c;
+}
+
+@media (max-width: 480px) {
+  .counter-card {
+    padding: 24px;
+  }
+
+  .counter-card h1 {
+    font-size: 28px;
+  }
+
+  .count-display {
+    width: 128px;
+    height: 128px;
+    font-size: 54px;
+  }
+}
